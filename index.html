@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con javascript/jquery</title>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" id="theme" href="css/green.css">
+
+    <!-- Jquery -->
+    <script src="js/plugins/jquery.min.js"></script>
+    
+    <!-- Slider -->
+    <link rel="stylesheet" href="js/plugins/slider/css/jquery.bxslider.css">
+    <script src="js/plugins/slider/js/jquery.bxslider.min.js"></script>
+
+    <!-- Moment js -->
+    <script src="js/plugins/moment/moment.js"></script>
+    <script src="js/plugins/moment/moment-es.min.js"></script>
+    
+    <!-- Main js -->
+    <script src="js/main.js"></script>
+    
+</head>
+<body>
+
+    <!-- Cambiador de tema -->
+    <div id="selector-theme">
+        <div id="to-green">
+        </div>
+        <div id="to-red">
+        </div>
+        <div id="to-blue">
+        </div>
+    </div>
+
+    <section id="global">
+        <!--Cabecera-->
+        <header>
+            <div  id="logo">
+                <h1>Practicando JS / Jquery</h1>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+                <ul>
+                    <li><a href="calc.html">Calculadora</a></li>
+                </ul>
+                <ul>
+                    <li><a href="reloj.html">Reloj</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about.html">Sobre mi</a></li>
+                </ul>
+                <ul>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <!--Cabecera-->
+
+        <!--Slider-->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/cielo.jpg" title="Cielo"></div>
+                <div><img src="img/rojo.jpg" title="Rojo"></div>
+                <div><img src="img/hojas.jpg" title="Hojas"></div>
+            </div>
+        </div>
+        <!--Slider-->
+
+        <!--Contenido-->
+        <section id="content">
+            <div id="posts">
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quien Soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="caracol">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, illum temporibus illo accusamus blanditiis velit minus hic neque eos, fugit est dignissimos libero. Blanditiis accusantium, cumque labore inventore debitis laboriosam?</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="">
+                        <label for="user">Usuario: </label>
+                        <input type="text" name="user" id="user">
+
+                        <label for="pass">Contraseña: </label>
+                        <input type="password" name="pass" id="pass">
+
+                        <input type="submit" name="enviar" id="enviar" value="Ingresar" class="btn">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+        <!--Contenido-->
+    </section>
+    
+    <footer>
+        Desarrollado por Sebastian Ospina &copy; 2022
+
+        <a href="#" class="subir btn btn-subir">Ir arriba</a>
+    </footer>
+
+    
+</body>
+</html>
